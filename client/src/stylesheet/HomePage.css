@@ -1,0 +1,26 @@
+.car{
+    width: 1000px;
+    padding: 20px;
+
+}
+
+.landing{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.landing-search{
+    height: 50px;
+    width: 800px;
+    border-radius: 40px;
+    border: 3px g solid;
+    font-size: large;
+    text-align:left;
+
+    /* background-color: linear-gradient(#dcdcdc,#333333,#000000) ; */
+
+}

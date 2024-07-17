@@ -1,0 +1,17 @@
+.logo{
+    width: 60px;
+    padding-left: 20px;
+}
+
+.navigation-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navigation-elements{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+
+}
