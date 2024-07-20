@@ -1,26 +1,253 @@
-.car{
-    width: 1000px;
-    padding: 20px;
-
+* {
+    font-family: 'Gill Sans MT';
+    font-weight: 400;
 }
 
-.landing{
+#car-div {
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 446px; /* Set a fixed height for the hero section */
+}
+
+.landing {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
-    
+    padding: 0px 9vw;
 }
 
-.landing-search{
-    height: 50px;
-    width: 800px;
+.landing-search {
+    height: 40px; 
+    width: 50%; 
     border-radius: 40px;
-    border: 3px g solid;
-    font-size: large;
-    text-align:left;
+    border: 3px black solid;
+    font-size: 18px; /* Increased font size */
+    padding-left: 10px; /* Added padding */
+}
 
-    /* background-color: linear-gradient(#dcdcdc,#333333,#000000) ; */
+.instructions-container {
+    width: 80vw;
+    border-radius: 15px;
+    background-color: #25313A;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px 40px; /* Increased padding */
+}
 
+.instructions-card {
+    border-radius: 50px;
+    background-color: #25313A;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: 200;
+    transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.instructions-card:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+.instructions-image {
+    width: 90px;
+    height: 90px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%; /* Increased width */
+    margin: 0 auto; /* Centered the container */
+}
+
+.about-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 20px; /* Added padding */
+}
+
+.about-image {
+    width: 50px;
+    margin-bottom: 10px; /* Added margin */
+}
+
+.about-text {
+    font-family: 'Gill Sans MT';
+    font-size: 60px; /* Decreased font size */
+    text-align: center; /* Centered the text */
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px; /* Added padding */
+}
+
+.testimonials-elements {
+    border: #25313A 1px solid;
+    padding: 20px; /* Added padding */
+    border-radius: 10px; /* Added border radius */
+}
+
+.footer {
+    width: 100vw;
+    color: white;
+    background-color: #25313A;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0; /* Added padding */
+}
+
+.footer-name {
+    font-family: "Glegoo", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+    padding: 0;
+    margin: 0%;
+}
+
+.footer-img{
+    display: flex;
+    width: 70%;
+    justify-content:space-around ;
+    gap:20px
+}
+.footer-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+/* Media Queries */
+
+/* Mobile */
+@media (max-width: 480px) {
+    #car-div {
+        height: 300px; /* Adjusted height for mobile */
+    }
+
+    .landing-search {
+        width: 80%; /* Increased width for mobile */
+    }
+
+    .instructions-container {
+        flex-direction: column; /* Stack instructions vertically */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack about elements vertically */
+        width: 100%;
+    }
+
+    .about-elements {
+        width: 100%;
+        margin-bottom: 20px; /* Added margin */
+    }
+
+    .about-text {
+        font-size: 40px; /* Decreased font size */
+    }
+
+    .testimonials-container {
+        flex-direction: column; /* Stack testimonials vertically */
+        align-items: center;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    #car-div {
+        height: 350px; /* Adjusted height for tablets */
+    }
+
+    .landing-search {
+        width: 70%; /* Adjusted width for tablets */
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .about-elements {
+        width: 45%;
+        margin-bottom: 20px; /* Added margin */
+    }
+
+    .about-text {
+        font-size: 50px; /* Adjusted font size */
+    }
+
+    .testimonials-container {
+        flex-direction: column; /* Stack testimonials vertically */
+        align-items: center;
+    }
+}
+
+/* Small Screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #car-div {
+        height: 400px; /* Adjusted height for small screens */
+    }
+
+    .landing-search {
+        width: 60%; /* Adjusted width for small screens */
+    }
+
+    .about-container {
+        width: 90%;
+    }
+
+    .about-elements {
+        width: 30%;
+        margin-bottom: 20px; /* Added margin */
+    }
+
+    .about-text {
+        font-size: 55px; /* Adjusted font size */
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+    #car-div {
+        height: 446px; /* Original height for large screens */
+    }
+
+    .landing-search {
+        width: 50%; /* Original width for large screens */
+    }
+
+    .about-container {
+        width: 80%;
+    }
+
+    .about-elements {
+        width: 30%;
+    }
+
+    .about-text {
+        font-size: 60px; /* Original font size */
+    }
 }

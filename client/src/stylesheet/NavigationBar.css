@@ -1,17 +1,65 @@
+
 .logo{
     width: 60px;
     padding-left: 20px;
 }
+.logo-div {
+    color: red;
+    width: 30%;
+}
+
+
 
 .navigation-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     
 }
 
 .navigation-elements{
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
 
+    display: flex;
+    width: 70%;
+    text-decoration: none;
+    font-size: medium;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+.nav-element{
+    /* width: 60%; */
+    padding: 5px 20px;
+    color: #25313A; 
+    font-size: medium;
+    font-family: 'Gill Sans MT';
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+#rentcar{
+    border: 2px solid #25313A;
+    border-radius: 11px;
+    background-color: #25313A;
+    color: white;  
+}
+
+#signup{
+    border: 2px solid #25313A;
+    border-radius: 11px;
+    background-color: white;
+    
+
+}
+
+.rent-signup{
+    padding-right: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
 }

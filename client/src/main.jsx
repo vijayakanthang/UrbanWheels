@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import BrowserPage from './Pages/BrowserPage.jsx'
 import HomePage from './Pages/HomePage.jsx'
 import RentYourCar from './Pages/RentYourCar.jsx'
+import CarManagement from './Admin/SuperAdmin.jsx'
+import BookingPage from './Pages/BookingPage.jsx'
+import CheckOutPage from './Pages/CheckOutPage.jsx'
 
 const routes = createBrowserRouter([
   {
@@ -21,8 +24,16 @@ const routes = createBrowserRouter([
         element:<BrowserPage/>
       },
       {
-        path:'/rent-your-car',
-        element:<RentYourCar/>
+        path:'/booking',
+        element:<BookingPage/>
+      },
+      {
+        path:'/Admin',
+        element:<CarManagement/>
+      },
+      {
+        path:'checkout',
+        element:<CheckOutPage/>
       }
     ]
   }

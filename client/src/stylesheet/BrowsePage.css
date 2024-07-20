@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .Sidebar {
+    margin-top: 80px;
+    width: 20%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+  }
+  
+  .Search-bar {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  
+  .Filter-section {
+    margin-top: 20px;
+  }
+  
+  .Filter-section h4 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .Filter-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  .Filter-section input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+
+  /* ------------- car displaying CSS ---------*/
+
+
+.Car-container {
+  width: 80%;
+  float: right;
+  padding: 20px;
+  margin-top: 80px;
+  box-sizing: border-box;
+  height: calc(100vh - 40px); /* Adjust the height as needed */
+  overflow-y: scroll;
+}
+
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .card-details img {
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .car-info {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .text-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .text-body {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .Sidebar {
+      width: 30%;
+    }
+  
+    .Car-container {
+      width: 70%;
+    }
+  
+    .card {
+      width: calc(50% - 20px); /* Adjust for spacing */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .Sidebar {
+      width: 35%;
+    }
+  
+    .Car-container {
+      width: 65%;
+    }
+  
+    .card {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .card-details img {
+      width: 100%;
+    }
+  
+    .details {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Sidebar {
+      width: 100%;
+      float: none;
+      padding: 10px;
+    }
+  
+    .Car-container {
+      width: 100%;
+      float: none;
+      padding: 10px;
+    }
+  
+    .card {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .card-details {
+      flex-direction: column;
+    }
+  
+    .card-details img {
+      width: 100%;
+    }
+  
+    .details {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  /*  book now button css */
+/* Button Styles */
+.card-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .card-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .card-button:active {
+    background-color: #003d80;
+    transform: scale(0.98);
+  }
+  
+  .card-button:disabled {
+    background-color: #c6c6c6;
+    color: #6c757d;
+    cursor: not-allowed;
+  }
+
+  /*--------------- Price Range Filter Styles --------*/
+.Price-filter {
+    margin-top: 20px;
+  }
+  
+  .Range-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .Range-slider label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Range-slider input[type="range"] {
+    width: 100%;
+  }
+  
+  
